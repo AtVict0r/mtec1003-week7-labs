@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Calc</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt("Enter a number");
+        var num2 = prompt("Enter another number");
+        var operator = prompt("Enter an operator (add / sub / mul / div / mod)");
+        if (operator.toLowerCase() === "add") {
+            console.log("The sum of " + num1 + " and " + num2 + " is " + (parseInt(num1) + parseInt(num2)));
+        } else if (operator.toLowerCase() === "sub") {
+            console.log("The difference of " + num1 + " and " + num2 + " is " + (parseInt(num1) - parseInt(num2)));
+        } else if (operator.toLowerCase() === "mul") {
+            console.log("The product of " + num1 + " and " + num2 + " is " + (parseInt(num1) * parseInt(num2)));
+        } else if (operator.toLowerCase() === "div") {
+            console.log("The quotient of " + num1 + " and " + num2 + " is " + (parseInt(num1) / parseInt(num2)));
+        } else if (operator.toLowerCase() === "mod") {
+            console.log("The remainder of " + num1 + " and " + num2 + " is " + (parseInt(num1) % parseInt(num2)));
+        } else {
+            console.log("Invalid operator");
+        }
+    </script>
+</body>
+</html>

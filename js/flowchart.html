@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart</title>
+</head>
+<body>
+    <img src="./img/engineering-flow-chart.png" alt="engineering flowchart meme">
+    <script>
+        var answer = prompt("Does it move? (y/n)");
+        if(answer.toLowerCase() === 'y') {
+            answer = prompt("Should it move? (y/n)");
+            if(answer.toLowerCase() === 'y') {
+                console.log("No problem.");
+            } else if (answer.toLowerCase() === 'n') {
+                console.log("Then use duct tape!!!");
+            } else {
+                console.log("Answer my question! You didn't type y or n.");
+            }
+        } else if (answer.toLowerCase() === 'n'){
+            answer = prompt("Should it move? (y/n)");
+            if(answer.toLowerCase() === 'y') {
+                console.log("Then use lubricant!!!");
+            } else if (answer.toLowerCase() === 'n') {
+                console.log("No problem.");
+            } else {
+                console.log("Answer my question! You didn't type y or n.");
+            }
+        } else {
+            console.log("Answer my question! You didn't type y or n.");
+        }
+    </script>
+</body>
+</html>
